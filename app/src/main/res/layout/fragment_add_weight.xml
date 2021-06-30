@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddWeightFragment">
+
+    <Button
+        android:id="@+id/addpicture_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take Picture" />
+
+    <ImageView
+        android:id="@+id/weightimage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <EditText
+        android:id="@+id/todayHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:hint="Today's Height"/>
+    <EditText
+        android:id="@+id/todayWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:hint="Today's Weight"/>
+
+    <EditText
+        android:id="@+id/todayDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:hint="dd/mm/yy"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+    <Button
+        android:id="@+id/saveWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"/>
+
+    <Button
+        android:id="@+id/showWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Weight"/>
+
+    </LinearLayout>
+
+</LinearLayout>

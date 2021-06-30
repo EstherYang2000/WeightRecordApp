@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="@drawable/background"
+    tools:context=".BmiDetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/bmititle"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/bmibody"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+<!--    <WebView-->
+<!--        android:id="@+id/wvBMI"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="300dp" />-->
+
+    <Button
+        android:id="@+id/back"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/purple_500"
+        android:textColor="@color/black"
+        android:radius="5sp"
+        android:text="Back to BMI"
+        android:layout_gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+       />
+
+</LinearLayout>

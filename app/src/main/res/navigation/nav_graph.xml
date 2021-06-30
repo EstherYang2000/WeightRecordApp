@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.weightrecord.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/histroyFragment"
+        android:name="com.example.weightrecord.HistroyFragment"
+        android:label="fragment_histroy"
+        tools:layout="@layout/fragment_histroy" >
+        <action
+            android:id="@+id/action_histroyFragment_to_addWeightFragment"
+            app:destination="@id/addWeightFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/BMIFragment"
+        android:name="com.example.weightrecord.BMIFragment"
+        android:label="fragment_b_m_i"
+        tools:layout="@layout/fragment_b_m_i" >
+        <action
+            android:id="@+id/action_BMIFragment_to_bmiDetailsFragment"
+            app:destination="@id/bmiDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addWeightFragment"
+        android:name="com.example.weightrecord.AddWeightFragment"
+        android:label="fragment_add_weight"
+        tools:layout="@layout/fragment_add_weight" >
+        <action
+            android:id="@+id/action_addWeightFragment_to_histroyFragment"
+            app:destination="@id/histroyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyListFragment"
+        android:name="com.example.weightrecord.HistoryListFragment"
+        android:label="fragment_history_list"
+        tools:layout="@layout/fragment_history_list" >
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.weightrecord.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/graphFragment"
+        android:name="com.example.weightrecord.GraphFragment"
+        android:label="fragment_graph"
+        tools:layout="@layout/fragment_graph" />
+    <fragment
+        android:id="@+id/bmiDetailsFragment"
+        android:name="com.example.weightrecord.BmiDetailsFragment"
+        android:label="fragment_bmi_details"
+        tools:layout="@layout/fragment_bmi_details" >
+        <action
+            android:id="@+id/action_bmiDetailsFragment_to_BMIFragment"
+            app:destination="@id/BMIFragment" />
+        <argument
+            android:name="bmititle"
+            app:argType="string" />
+        <argument
+            android:name="bmibody"
+            app:argType="string" />
+
+    </fragment>
+</navigation>
